@@ -13,6 +13,18 @@ Gostariamos de criar um site que funionará como um achados e perdidos online e 
 * Samuel Leite Diniz
 * Wesley Henrique de Lima
 
+## Sprint 1 (15 pontos)
+### Documentação
+- Folha de detalhamento do problema ✔️
+- Persona(s) ✔️
+- Histórias de usuários prioritárias (pelo menos 3) ✔️
+- Wireframes apresentados no vídeo. ✔️
+
+__Documentação bem organizada. Parabéns!!__
+
+### Observações sobre a apresentação 
+Apresentação muito boa, no geral. Atenção para a ordem lógica das coisas: é necessário apresentar primeiro o problema que atinge alguém e depois sua solução, não o contrário.
+
 ## Professores responsáveis
 
 * João Caram Santos de Oliveira
