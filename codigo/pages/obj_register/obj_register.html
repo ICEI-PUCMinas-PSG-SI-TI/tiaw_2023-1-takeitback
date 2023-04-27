@@ -1,29 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entre em Contato</title>
+    <title>Take It Back</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="contato.css">
     <link rel="stylesheet" href="../../global/css/style.css">
+    <link rel="stylesheet" href="./obj_register.css">
 
 </head>
-
 
 <body>
     <!--Header-->
@@ -46,7 +38,7 @@
                             <a class="nav-link" href="../sobre/sobre.html">Sobre Nós</a>
                         </li>
                         <li class="nav-item dropdown ms-auto me-auto">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Objetos
                             </a>
@@ -56,7 +48,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="../contato/contato.html">Contato</a>
+                            <a class="nav-link" href="../contato/contato.html">Contato</a>
                         </li>
                         <li class="nav-item d-none d-lg-block ms-lg-5">
                             <a href="../login/login.html"><i id="icon-user" class="fa-solid fa-circle-user"></i></a>
@@ -67,55 +59,73 @@
         </nav>
     </header>
     <!--/Header-->
-    <main class="contato">
-        <h1>ENTRE EM CONTATO CONOSCO</h1>
-
-        <div class="caixa-cards">
-            <div class="cartao">
-                <i class="fa-solid fa-location-dot"></i>
-                <h3>Nosso escritorio principal</h3>
-                <p>
-                    Rua Walter Ianni, 255 - São Gabriel, Belo Horizonte - MG
-                </p>
+    <!--Main-->
+    <main>
+        <div class="container">
+            <div class="row">
+                <nav class="mt-5" aria-label="Alternar objetos">
+                    <ul class="pagination justify-content-left">
+                        <li class="page-item">
+                            <a class="page-link" href="#">Perdi um objeto</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Achei um objeto</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div class="cartao">
-                <i class="fa-solid fa-phone"></i>
-                <h3>Número de Telefone</h3>
-                <p>
-                    (31)97337-3313
-                </p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col mb-5 mt-5">
+                    <h2 class="d-flex flex-wrap justify-content-center">Perdi um objeto</h2>
+                </div>
             </div>
-            <div class="cartao">
-                <i class="fa-solid fa-envelope"></i>
-                <h3>E-Mail</h3>
-                <p>
-                    takeitback@gmail.com
-                </p>
+            <div class="row">
+                <div class="col-md mb-3">
+                    <label for="text" class="form-label">Nome do Objeto</label>
+                    <input type="text" class="form-control" id="text">
+                </div>
+                <div class="col-md mb-3">
+                    <label for="type" class="form-label">Tipo do Objeto</label>
+                    <select class="form-select" id="inputGroupSelect01">
+                        <option selected>Selecione o tipo</option>
+                        <option value="1">Mochila</option>
+                        <option value="2">Caderno</option>
+                        <option value="3">Garrafa</option>
+                    </select>
+                </div>
+                <div class="col-md mb-3">
+                    <label for="date" class="form-label">Data em que foi encontrado</label>
+                    <input type="date" class="form-control" id="date">
+                </div>
             </div>
-            <div class="cartao">
-                <i class="fa-brands fa-instagram"></i>
-                <h3>Instagram</h3>
-                <p>
-                    @takeitback
-                </p>
+            <div class="row">
+                <div class="col-md mb-3">
+                    <label for="text" class="form-label">Descrição do Objeto</label>
+                    <input type="text" class="form-control" id="text">
+                </div>
+                <div class="col-md mb-3">
+                    <label for="text" class="form-label">Local onde foi encontrado</label>
+                    <input type="text" class="form-control" id="text">
+                </div>
+                <div class="row">
+                    <div class="col-5 mb-3">
+                        <label for="text" class="form-label">Adicionar Foto do Objeto</label>
+                        <div class="input-group">
+                            <input type="file" class="form-control" id="file">
+                            <label class="input-group-text" for="file">Upload</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <button type="submit" class="mb-3 btn w-25 btn-dark">Cadastrar</button>
+                </div>
             </div>
         </div>
 
-        <div class="formulario">
-            <div class="campos">
-                <label for="nome">Digite o nome</label>
-                <input type="text" name="nome" id="nome">
-            </div>
-            <div class="campos">
-                <label for="nome">Digite o E-Mail</label>
-                <input type="text" name="nome" id="nome">
-            </div>
-            <div class="campos">
-                <label for="Mensagem">Mande sua Mensagem! </label>
-                <textarea name="Mensagem" id="" cols="30" rows="5"></textarea>
-            </div>
-        </div>
     </main>
+    <!--/Main-->
     <!--Footer-->
     <footer class="shadow">
         <div class="container">
@@ -134,8 +144,14 @@
         </div>
     </footer>
     <!--/Footer-->
-
-    <script src="https://kit.fontawesome.com/c16fa34ff9.js" crossorigin="anonymous"></script>
+    <!--Import Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <!--Import Bootstrap-->
 </body>
 
 </html>
