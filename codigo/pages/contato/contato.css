@@ -1,15 +1,7 @@
 /*** Fundo e Titulo **/
 .contato {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(25, 44, 82, 1) 29%, rgba(0, 212, 255, 1) 100%);
-    font-style: italic;
+    
 }
-
-.titulo h1 {
-    color: white;
-
-}
-
 .titulo {
     margin-left: 350px;
 }
@@ -58,9 +50,8 @@
 
 /*** Quadradinhos tamanho **/
 
-
 .nome1 {
-    color: white
+    color: black
 }
 
 .nome2 {
@@ -97,7 +88,7 @@
 }
 
 .cartao {
-    background-color: white;
+    border: solid 1px;
     padding: 15px;
 }
 
@@ -120,13 +111,9 @@
 
 /*** Rodapé**/
 
-
-
-
 .formulario {
     margin-top: 50px;
 }
-
 
 input {
     width: 100%;
@@ -140,11 +127,8 @@ textarea {
 
 h1 {
     text-align: center;
-    color: white;
-
-
+    color: black;
 }
-
 label {
-    color: white
+    color: black;
 }
