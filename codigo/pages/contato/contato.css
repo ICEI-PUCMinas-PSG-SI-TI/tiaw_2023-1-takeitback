@@ -1,70 +1,11 @@
-/*** Fundo e Titulo **/
-.contato {
+/* Contato **/
+body{
+    background-color: white;
+}
+
+main {
+    padding: 30px;
     
-}
-.titulo {
-    margin-left: 350px;
-}
-
-/*** Quadradinhos imagens **/
-
-.local img {
-    width: 56px;
-    float: right;
-
-}
-
-.telefone img {
-    width: 80px;
-    float: right;
-
-}
-
-.instagram img {
-    width: 83px;
-    float: right;
-
-}
-
-.email img {
-    width: 89px;
-
-}
-
-/*** Quadradinhos tamanho **/
-.height1 {
-    line-height: 26px;
-}
-
-.height2 {
-    line-height: 32px;
-}
-
-.height3 {
-    line-height: 32px;
-}
-
-.height4 {
-    line-height: 34px;
-}
-
-/*** Quadradinhos tamanho **/
-
-.nome1 {
-    color: black
-}
-
-.nome2 {
-    color: white
-}
-
-.nome3 {
-    color: white
-}
-
-.botao {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(25, 44, 82, 1) 29%, rgba(0, 212, 255, 1) 100%);
 }
 
 .caixa-cards {
@@ -88,47 +29,80 @@
 }
 
 .cartao {
-    border: solid 1px;
+    background-color: #4473C5;
     padding: 15px;
 }
 
 .cartao i {
-    color: blueviolet;
+    color: #203764;
     font-size: 40px;
 }
 
 .cartao h3 {
-    color: black;
-    font-size: 20px;
+    color: white;
+    font-size:20px;
     margin-top: 10px;
 }
 
 .cartao p {
     font-size: 12px;
+    color: white;
 }
 
-/* diplay block e width de 100% no input*/
 
-/*** Rodapé**/
-
-.formulario {
-    margin-top: 50px;
-}
-
-input {
+footer {
     width: 100%;
-    display: block;
-    height: 30px;
+    background-color:black;
 }
 
-textarea {
+
+.formulario{
+    margin-top: 30px;
+}
+
+
+input{
+        width: 100%;
+        display: block;
+        height: 30px;
+    }
+
+ textarea{
     width: 100%;
-}
+ }  
 
-h1 {
+h1{
     text-align: center;
-    color: black;
+    color:black;
+    margin-top: 12px;
+
+   
+    
 }
-label {
-    color: black;
+
+label{
+    color:black;
 }
+
+button{
+    margin-left:670px;
+    margin-top: 20px;
+    
+}
+
+
+/* Fim Contato**/
+
+
+/* Rodapé e Cabeçalho **/
+
+
+
+
+
+
+
+
+
+
+
