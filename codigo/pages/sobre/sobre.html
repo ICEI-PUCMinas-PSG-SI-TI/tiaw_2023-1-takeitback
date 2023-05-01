@@ -1,89 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <title>Sobre nos</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./sobre.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../../global/css/style.css">
+</head>
 
-
-
-  <div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-
-
-    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-      <img src="IMAGEM NAO DEFINIDA" alt="aff" width="700" height="450">
-      <h2 class="w3-wide">Quem somos</h2>
-      <p class="w3-justify">Nos somos um grupo de colegas de sala, que decidirams montar um achados e perdidos para a
-        Puc.Os integrantes do grupo são, Rafael, Pedro, Samuel e Wesley.
-        O grupo foi criado no dia 02/03/2023 com a intenção de ajudar, estudantes, professores e funcionarios acharem
-        seus pertences perdidos.
-
-
+<body>
+  <!--Header-->
+  <header>
+    <nav class="navbar navbar-dark navbar-expand-lg shadow">
+      <div class="container">
+        <a class="navbar-brand" href="../home/home.html">Take It Back</a>
+        <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="d-lg-none" href="#"><i id="icon-user" class="fa-solid fa-circle-user"></i></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../home/home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../sobre/sobre.html">Sobre Nós</a>
+            </li>
+            <li class="nav-item dropdown ms-auto me-auto">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Objetos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../obj_register/obj_register.html">Cadastrar</a></li>
+                <li><a class="dropdown-item" href="#">Procurar</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contato/contato.html">Contato</a>
+            </li>
+            <li class="nav-item d-none d-lg-block ms-lg-5">
+              <a href="../login/login.html"><i id="icon-user" class="fa-solid fa-circle-user"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--/Header-->
+  <main class="sobre">
+    <div class="container">
+      <div class="area-img">
+        <img src="" alt="">
+      </div>
+      <h2 class="text-center">Quem somos</h2>
+      <p>Nos somos um grupo de universitários da PUC Minas São Gabriel do curso de sistemas de Informação,
+        que estamos realizando um projeto Interdisciplinar sobre montar um sistema de achados e perdidos para a
+        nossa universidade. Os integrantes do grupo são Pedro Melo, Rafael Mendes, Samuel Leite Diniz e Wesley Henrique
+        de Lima.
       </p>
-
-
-      <div class="container my-5">
-
-        <footer style="background-color: #1b1b1b;">
-          <div class="container p-4">
-            <div class="row">
-              <div class="col-lg-6 col-md-12 mb-4">
-                <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">Ficou com alguma duvida entre em contato
-                </h5>
-                <p>
-
-                </p>
-                <p><button type="button" class="btn btn-outline-light" class="center"
-                    onclick="location.href='sobre.html'">Clique aqui</button></p>
-              </div>
-
-              <div class="col-lg-3 col-md-6 mb-4">
-                <h5 class="mb-1" style="letter-spacing: 2px; color: #fdfdfd;">Horario de funcionamento</h5>
-                <table class="table" style="color: #fafafa; border-color: #fdfdfd;">
-                  <tbody>
-                    <tr>
-                      <td>Segundas 9:00</td>
-                      <td>as de</td>
-                      <td>Sextas 17:00</td>
-                    </tr>
-                    <tr>
-                      <td>Sabados 9:00</td>
-                      <td>as de</td>
-                      <td>Domingos 15:00</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
-
-          <a class="text-dark" href="https://mdbootstrap.com/"></a>
+      <h2 class="text-center">Nosso projeto</h2>
+      <p>
+        Take it Back! Ele será responsável por tornar mais prática a procura por objetos perdidos na PUC-Minas São
+        Gabriel. Gostariamos de criar um site que funionará como um achados e perdidos online e que, de forma simples,
+        você possa:
+      </p>
+      <ul>
+        <li>Ter acesso aos itens perdidos na puc, cadastrados em nossa lista.</li>
+        <li>Requisitar um item perdido ou adicionar a lista algo que tenha achado.</li>
+        <li>Facilitar a comunicação entre quem perdeu, quem achou um item e o achados e perdidos presencial.</li>
+      </ul>
+      <div class="d-flex flex-column align-items-center">
+        <h5 class="mb-3 mt-5">Tem alguma duvida? Entre em contato</h5>
+        <a href="../contato/contato.html" class="btn rounded-pill">Contate aqui</a>
       </div>
 
-      </footer>
-
     </div>
-
-    </footer>
-
-  </div>
-
-
-
-
-
-
-
-
-  </body>
+  </main>
+  <!--Footer-->
+  <footer class="shadow">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <span id="logo-footer">&copy;Projeto Interdisciplinar TakeItBack</span>
+        <nav class="nav d-flex flex-column flex-md-row">
+          <a class="nav-link active" href="../contato/contato.html">Contato</a>
+          <a class="nav-link" href="../sobre/sobre.html">Sobre Nós</a>
+          <a class="nav-link" href="#">FAQ</a>
+        </nav>
+      </div>
+      <div class="d-flex justify-content-center icon-network">
+        <a class="nav-link" href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!--/Footer-->
+  <!--Import Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <!--Import Bootstrap-->
+</body>
 
 </html>

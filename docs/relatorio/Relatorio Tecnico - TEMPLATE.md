@@ -1,21 +1,19 @@
 # Informações do Projeto
 `TÍTULO DO PROJETO`  
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Take It Back
 
 `CURSO` 
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Sistemas de Informação
 
 ## Participantes
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Inclua a lista dos membros da equipe com seus nomes completos.
->
-> Os membros do grupo são: 
-> - Fulano da Silva
-> - Ciclano Albuquerque
+Os membros do grupo são: 
+ - Pedro Melo
+ - Rafael Mendes
+ - Samuel Leite Diniz
+ - Wesley Henrique de Lima
 
 # Estrutura do Documento
 
@@ -39,76 +37,25 @@
 
 ## Problema
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Nesse momento você deve apresentar o problema que a sua aplicação deve
-> resolver. No entanto, não é a hora de comentar sobre a aplicação.
-> Descreva também o contexto em que essa aplicação será usada, se
-> houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de
-> fato existir, pois ainda não é a hora de apresentar requisitos
-> detalhados ou projetos. Utilize como base a ficha inicial de detalhamento do problema.
->
+Devido a correria do dia a dia, muitas pessoas acabam esquecendo seus objetos no trabalho, faculdade, transporte público, etc. Na PUC-Minas São Gabriel, os alunos, professores e funcionários são afetados diretamente por esse problema. Objetos, muitas vezes de valor, são esquecidos por toda a área do campus, principalmente nas salas de aula. Apesar do problema, não existe um meio fácil e prático de procurar, recuperar ou anunciar o achado de itens perdidos.
 
 ## Objetivos
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Aqui você deve descrever os objetivos do trabalho indicando que o
-> objetivo geral é desenvolver um software para solucionar o problema
-> apresentado acima. Apresente também pelo menos 2 objetivos
-> específicos dependendo de onde você vai querer concentrar ou aprofundar
-> as características do trabalho.
-> 
-> **Link Útil**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Nosso objetivo é criar uma ferramenta em que possa ajudar e tornar mais prática a procura por objetos perdidos na PUC-Minas São Gabriel. Gostaríamos de criar um site de forma simples que possa disponibilizar acesso aos itens perdidos e cadastrados na puc, solicitar um item perdido ou adicionar algo que tenha achado e também facilitar a comunicação entre quem perdeu, quem achou e o achados e perdidos presencial.
 
 ## Público-Alvo
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Descreva quem serão as pessoas que usarão a sua aplicação indicando os
-> diferentes perfis. O objetivo aqui não é definir quem serão os
-> clientes ou quais serão os papéis dos usuários na aplicação. A ideia
-> é, dentro do possível, conhecer um pouco mais sobre o perfil dos
-> usuários: conhecimentos prévios, relação com a tecnologia, relações
-> hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição
-> textual, ou diagramas de personas, mapa de stakeholders, ou como o
-> grupo achar mais conveniente.
-> 
-> **Links Úteis**:
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+ Publico alvo de modo geral são todas as pessoas que frequentam e trabalham na PUC-Minas São Gabriel, que por um acaso podem acabar perdendo algum objeto pessoal e que futuramente necessitaram de ajudar para reencontrar seus objetos perdidos. Especificamente as pessoas são os alunos, professores e funcionários que estarão sempre por todo campos, Seja um aluno ou professor que estará sempre participando de aulas em diferentes salas e horários ou funcionário que atuara em setor especifica da sua função.
  
 # Especificações do Projeto
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Apresente uma visão geral do que será abordado nesta parte do
-> documento, enumerando as técnicas e/ou ferramentas utilizadas para
-> realizar a especificações do projeto
+O projeto será basicamente um site com sistema de login e cadastro de todos membros da PUC-Minas São Gabriel, que depois de autenticado poderá realizar cadastro de objetos perdidos ou encontrados e também realizar buscas em nossas listas de objetos cadastrados no sistema. Estes objetos contara com as descrição e especificações do objeto tanto como o contato para devolução e um possível local de procura.
 
 ## Personas
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Relacione as personas identificadas no seu projeto. Lembre-se que 
-> você deve descrever precisamente e de forma personalizada o público alvo do seu projeto. 
-> Você pode incluir uma imagem da ficha de persona desenvolvida. 
->
-> Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina
-> e/ou nos seguintes links:
->
-> **Links Úteis**:
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> 
-> **Exemplo de Ficha**
-> ![Exemplo de Persona](images/persona.png)
- 
+![Persona 1](images/persona1.jpeg)
+![Persona 2](images/persona2.jpeg)
+![Persona 3](images/persona3.jpeg)
 
 ## Histórias de Usuários
 
@@ -116,17 +63,10 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-> Seguindo o modelo acima, apresente aqui as histórias de usuário que são relevantes para o
-> projeto de sua solução. As Histórias de Usuário consistem em uma
-> ferramenta poderosa para a compreensão e elicitação dos requisitos
-> da sua aplicação. Utilize as personas criadas como atores e, se for o caso, um administrador. 
->
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
+| Aluno (Perdeu)     | De uma lista com objetos encontrados na faculdade| Encontrar meu objeto perdido|
+| Aluno (Perdeu)     | Divulgar meu objeto pessoal perdido| Encontrar alguém que tenha achado|
+| Funcionário (Achou)| Informar que achei um objeto| Pessoa que perdeu recuperar direto comigo|
+| Funcionário        | Preciso registrar os objetos perdidos na faculdade| Ter controle da saída e entrada de objetos no achados e perdidos|
 
 ## Requisitos
 
@@ -136,52 +76,31 @@ A tabela que segue apresenta os requisitos funcionais do projeto.
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
-
-
-> Com base nas Histórias de Usuário, enumere os requisitos da sua
-> solução. Classifique esses requisitos em dois grupos:
->
-> Lembre-se que cada requisito deve corresponder à uma e somente uma
-> característica alvo da sua solução. Além disso, certifique-se de que
-> todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|RF-001| Cadastro de objetos perdidos e encontrados | ALTA | 
+|RF-002| Lista de objetos perdidos e encontrados | ALTA |
+|RF-003| Marcação para retirar da lista objetos já devolvidos | MÉDIA |
 
 # Projeto da Solução
 
-......  COLOQUE AQUI O SEU TEXTO ......
-> Descreva brevemente quais tecnologias e/ou frameworks foram utilizados no projeto.
+O projeto é desenvolvida em linguagens Html, Css , JavaScript e também com o framework Bootstrap. Além do Font Awesome um conjunto de ferramentas de ícones e fontes.
 
 ## Wireframes
 
-......  INCLUA AQUI OS WIREFRAMES DAS TELAS DA APLICAÇÃO COM UM BREVE DESCRITIVO ......
+**Pagina de apresentação**:
+![Wireframe 1](images/wireframe1.png)
+Contém apresentação do site e sua função.
 
-> Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a
-> estrutura de um site web e seu relacionamentos entre suas
-> páginas. Um wireframe web é uma ilustração semelhante ao
-> layout de elementos fundamentais na interface.
-> 
-> **Links Úteis**:
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> 
-> **Exemplo**:
-> 
-> ![Exemplo de Link para Wireframe](images/wireframe-example.png)
+**Cadastro de objetos**:
+![Wireframe 2](images/wireframe2.png)
+Contém formulário necessário para cadastro de um objeto.
 
+**Lista de objetos**:
+![Wireframe 3](images/wireframe3.png)
+Contém categorias e lista de objetos.
 
 ## Mapa de navegação
 
-......  COLOQUE AQUI O SEU TEXTO OU DIAGRAMA DE NAVEGAÇÃO .......
-
-> Inclua uma descrição textual ou um diagrama mostrando, sequencialmente, quais ações
-> um usuário deve realizar para utilizar todas as características do seu sistema. 
-
-
-> **Exemplo de Diagrama (opcional, pode ser em texto)**
-> ![Exemplo de Diagrama de Navegação](images/userflow.jpg)
+![Diagrama de Navegação](images/usernav.PNG)
 
 # Conclusões
 
