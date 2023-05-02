@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entre em Contato</title>
-   
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -22,7 +23,7 @@
     <header>
         <nav class="navbar navbar-dark navbar-expand-lg shadow">
             <div class="container">
-                <a class="navbar-brand" href="#">Take It Back</a>
+                <a class="navbar-brand" href="../home/home.html">Take It Back</a>
                 <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -32,10 +33,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav  ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="../home/home.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre Nós</a>
+                            <a class="nav-link" href="../sobre/sobre.html">Sobre Nós</a>
                         </li>
                         <li class="nav-item dropdown ms-auto me-auto">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -43,15 +44,15 @@
                                 Objetos
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Cadastrar</a></li>
+                                <li><a class="dropdown-item" href="../obj_register/obj_register.html">Cadastrar</a></li>
                                 <li><a class="dropdown-item" href="#">Procurar</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link  active" href="../contato/contato.html">Contato</a>
                         </li>
                         <li class="nav-item d-none d-lg-block ms-lg-5">
-                            <a href="/codigo/pages/login/login.html"><i id="icon-user" class="fa-solid fa-circle-user"></i></a>
+                            <a href="../login/login.html"><i id="icon-user" class="fa-solid fa-circle-user"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -60,69 +61,78 @@
     </header>
     <!--/Header-->
 
-    <main>
+    <main class="contato">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center">Entre em contato conosco</h2>
+                <div class="col-12 col-lg-4">
+                    <div class="caixa-cards d-flex flex-column">
+                        <div class="cartao">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h3>Nosso local principal</h3>
+                            <span>
+                                Rua Walter Ianni, 255 - São Gabriel, Belo Horizonte - MG
+                            </span>
+                        </div>
+                        <div class="cartao">
+                            <i class="fa-solid fa-phone"></i>
+                            <h3>Número de Telefone</h3>
+                            <span>
+                                (31)97337-3313
+                            </span>
+                        </div>
+                        <div class="cartao">
+                            <i class="fa-solid fa-envelope"></i>
+                            <h3>E-Mail</h3>
+                            <span>
+                                takeitback@gmail.com
+                            </span>
+                        </div>
+                        <div class="cartao">
+                            <i class="fa-brands fa-instagram"></i>
+                            <h3>Instagram</h3>
+                            <span>
+                                @takeitback
+                            </span>
+                        </div>
+                    </div>
+                </div>
 
-        <h1>ENTRE EM CONTATO CONOSCO</h1>
-    
-        <div class="caixa-cards">
-            <div class="cartao">
-                <i class="fa-solid fa-location-dot"></i>
-                <h3>Nosso escritorio principal</h3>
-                <p>
-                    Rua Walter Ianni, 255 - São Gabriel, Belo Horizonte - MG 
-                </p>
-            </div>
-            <div class="cartao">
-                <i class="fa-solid fa-phone"></i>
-                <h3>Número de Telefone</h3>
-                <p>
-                    (31)97337-3313
-                </p>
-            </div>
-            <div class="cartao">
-                <i class="fa-solid fa-envelope"></i>
-                <h3>E-Mail</h3>
-                <p>
-                    takeitback@gmail.com
-                </p>
-            </div>
-            <div class="cartao">
-                <i class="fa-brands fa-instagram"></i>
-                <h3>Instagram</h3>
-                <p>
-                   @takeitback
-                </p>
+                <div class="col-12 col-lg-8 d-flex">
+                    <div class="formulario mt-auto mb-auto">
+                        <h5 class="text-center mt-2 mb-4">Envie-nos uma mensagem</h5>
+                        <div class="form-floating mb-3 campos">
+                            <input class="form-control" type="text" name="nome" id="nome" placeholder="nome">
+                            <label for="nome">Nome</label>
+                        </div>
+                        <div class="form-floating mb-3 campos">
+                            <input class="form-control" type="text" name="email" id="email" placeholder="email">
+                            <label for="email">E-mail</label>
+                        </div>
+                        <div class="form-floating mb-3 campos">
+                            <textarea class="form-control" name="mensagem" id="mensagem" placeholder="email"></textarea>
+                            <label for="email">Mensagem</label>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn rounded-pill">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    
-            <div class="formulario">
-                <div class="campos">
-                    <label for="nome">Digite o nome</label>
-                    <input type="text" name="nome" id="nome">
-                </div>
-                <div class="campos">
-                    <label for="nome">Digite o E-Mail</label>
-                    <input type="text" name="nome" id="nome">
-                </div>
-                <div class="campos">
-                    <label for="Mensagem">Mande sua Mensagem!   </label>
-                    <textarea name="Mensagem" id="" cols="30" rows="5"></textarea>
-                </div>
-                <button type="button" class="btn btn-dark">ENVIAR</button>
-            </div>
-    
     </main>
 
     <!-- Criei um main pra agrupar todas as informacoes que teriam um padding-->
-    
-    
+
+    <!--Footer-->
     <footer class="shadow">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
                 <span id="logo-footer">&copy;Projeto Interdisciplinar TakeItBack</span>
                 <nav class="nav d-flex flex-column flex-md-row">
-                    <a class="nav-link active" href="#">Contato</a>
-                    <a class="nav-link" href="#">Sobre Nós</a>
+                    <a class="nav-link active" href="../contato/contato.html">Contato</a>
+                    <a class="nav-link" href="../sobre/sobre.html">Sobre Nós</a>
                     <a class="nav-link" href="#">FAQ</a>
                 </nav>
             </div>
@@ -135,6 +145,15 @@
     <!--/Footer-->
 
     <script src="https://kit.fontawesome.com/c16fa34ff9.js" crossorigin="anonymous"></script>
+    <!--Import Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <!--Import Bootstrap-->
 
 </body>
+
 </html>
