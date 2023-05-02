@@ -35,6 +35,9 @@ header .nav-link:hover {
 header .active {
     color: #4473C5 !important;
 }
+header .user-active {
+    color: #4473C5 !important;
+}
 
 header .dropdown-menu {
     width: max-content;
