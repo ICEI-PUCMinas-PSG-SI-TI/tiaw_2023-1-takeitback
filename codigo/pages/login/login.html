@@ -71,18 +71,18 @@
             </div>
             <form>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="login" class="form-label">E-mail</label>
+                    <input type="text" class="form-control" id="login" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <label for="password" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="password">
                 </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Manter logado</label>
                 </div>
-                <button type="submit" class="mb-3 btn w-100 btn-dark">Logar</button>
+                <button type="submit" onclick="logar(); return false" class="mb-3 btn w-100 btn-dark">Logar</button>
             </form>
 
             <div class="text-center">
@@ -118,6 +118,7 @@
         integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
         crossorigin="anonymous"></script>
     <!--Import Bootstrap-->
+    <script src="login.js"></script>
 </body>
 
 </html>
