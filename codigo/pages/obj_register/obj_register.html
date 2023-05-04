@@ -13,7 +13,7 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../../global/css/style.css">
-    <link rel="stylesheet" href="./signup.css">
+    <link rel="stylesheet" href="./obj_register.css">
 
 </head>
 
@@ -38,7 +38,7 @@
                             <a class="nav-link" href="../sobre/sobre.html">Sobre Nós</a>
                         </li>
                         <li class="nav-item dropdown ms-auto me-auto">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Objetos
                             </a>
@@ -51,7 +51,7 @@
                             <a class="nav-link" href="../contato/contato.html">Contato</a>
                         </li>
                         <li class="nav-item d-none d-lg-block ms-lg-5">
-                            <a href="../login/login.html"><i id="icon-user" class="fa-solid fa-circle-user active"></i></a>
+                            <a href="../login/login.html"><i id="icon-user" class="fa-solid fa-circle-user"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -61,51 +61,69 @@
     <!--/Header-->
     <!--Main-->
     <main>
-        <div class="box m-auto mt-5 mb-5">
-            <h2 class="text-center mb-2">Crie uma conta e junte-se a nós!</h2>
-            <div class="text-center mb-3">
-                <img class="m-auto" src="../../assets/logoimg.png" alt="Ilustracaologo">
-            </div>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nome completo</label>
-                    <input type="name" class="form-control" id="name" aria-describedby="emailHelp">
-                </div>
-                <div>
-                    <label for="text" class="form-label">Matrícula/Identificação</label>
-                </div>
-                <div class="input-group">
-                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                    <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Ocupação</button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                      <li class="dropdown-item">Aluno</li>
-                      <li class="dropdown-item">Professor</li>
-                      <li class="dropdown-item">Funcionário</li>
+        <div class="container">
+            <div class="row">
+                <nav class="mt-5" aria-label="Alternar objetos">
+                    <ul class="pagination justify-content-left">
+                        <li class="page-item">
+                            <a class="page-link" href="#">Perdi um objeto</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Achei um objeto</a>
+                        </li>
                     </ul>
-                  </div>
-                  <div id="emailHelp" class="form-text mb-3">Informe sua matrícula caso aluno, e seu identificador caso contrário!</div>
-                  <div class="mb-3">
-                    <label for="tel" class="form-label">Número de telefone</label>
-                    <input type="tel" class="form-control" id="tel">
-                    <div id="emailHelp" class="form-text">(00) 00000-0000</div>
-                </div>
-                <div class="mb-3">
-                    <label for="cpf" class="form-label">CPF</label>
-                    <input type="cpf" class="form-control" id="cpf">
-                    <div id="emailHelp" class="form-text">000.000.000-00</div>
-                </div>
-                  <div class="mb-3">
-                    <label for="email" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">Utilize seu e-mail da PUC!</div>
-                </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="password">
-                </div>
-                <button type="submit" class="mb-3 btn w-100 btn-dark">Criar conta</button>
-            </form>
+                </nav>
+            </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col mb-5 mt-5">
+                    <h2 class="d-flex flex-wrap justify-content-center">Perdi um objeto</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md mb-3">
+                    <label for="text" class="form-label">Nome do Objeto</label>
+                    <input type="text" class="form-control" id="text">
+                </div>
+                <div class="col-md mb-3">
+                    <label for="type" class="form-label">Tipo do Objeto</label>
+                    <select class="form-select" id="inputGroupSelect01">
+                        <option selected>Selecione o tipo</option>
+                        <option value="1">Mochila</option>
+                        <option value="2">Caderno</option>
+                        <option value="3">Garrafa</option>
+                    </select>
+                </div>
+                <div class="col-md mb-3">
+                    <label for="date" class="form-label">Data em que foi encontrado</label>
+                    <input type="date" class="form-control" id="date">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md mb-3">
+                    <label for="text" class="form-label">Descrição do Objeto</label>
+                    <input type="text" class="form-control" id="text">
+                </div>
+                <div class="col-md mb-3">
+                    <label for="text" class="form-label">Local onde foi encontrado</label>
+                    <input type="text" class="form-control" id="text">
+                </div>
+                <div class="row">
+                    <div class="col-5 mb-3">
+                        <label for="text" class="form-label">Adicionar Foto do Objeto</label>
+                        <div class="input-group">
+                            <input type="file" class="form-control" id="file">
+                            <label class="input-group-text" for="file">Upload</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <button type="submit" class="mb-3 btn w-25 btn-dark">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+
     </main>
     <!--/Main-->
     <!--Footer-->
