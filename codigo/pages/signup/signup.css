@@ -10,4 +10,7 @@ main div.box {
 img {
     width: 150px;
 }
-
+main .btn.dropdown-toggle {
+    background-color: #203764;
+    color: white;
+}
