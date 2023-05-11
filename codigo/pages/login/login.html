@@ -22,8 +22,8 @@
     <header>
         <nav class="navbar navbar-dark navbar-expand-lg shadow">
             <div class="container">
-                <a class="navbar-brand" href="../home/home.html">Take It Back</a>
-                <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse"
+                <a href="../home/home.html"><img src="../../assets/Logo_white.png" class="m-2 img-fluid" width="250rem"> </a>
+                <button class="navbar-toggler me-auto m-2" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -62,7 +62,7 @@
     <!--Main-->
     <main>
         <div>
-            <br><br><br>
+            <br><br>
         </div>
         <div class="box m-auto mt-5 mb-5">
             <h2 class="text-center mb-2">Bem-vindo!</h2>
@@ -82,7 +82,9 @@
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Manter logado</label>
                 </div>
-                <button type="submit" onclick="logar(); return false" class="mb-3 btn w-100 btn-dark">Logar</button>
+                <div class="d-flex flex-column align-items-center mb-3">
+                    <a type="submit" onclick="logar(); return false" class="btn rounded-pill w-100">Logar</a>
+                </div>
             </form>
 
             <div class="text-center">
