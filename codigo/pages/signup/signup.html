@@ -75,13 +75,13 @@
                     <label for="text" class="form-label">Matrícula/Identificação</label>
                 </div>
                 <div class="input-group">
-                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Ocupação</button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                      <li class="dropdown-item">Aluno</li>
-                      <li class="dropdown-item">Professor</li>
-                      <li class="dropdown-item">Funcionário</li>
-                    </ul>
+                    <input type="text" class="form-control w-50" aria-label="Text input with dropdown button">
+                    <select class="form-select btn" id="inputGroupSelect01">
+                        <option selected>Ocupação</option>
+                        <option value="1">Aluno</option>
+                        <option value="2">Professor</option>
+                        <option value="3">Funcionário</option>
+                      </select>
                   </div>
                   <div id="emailHelp" class="form-text mb-3">Informe sua matrícula caso aluno, e seu identificador caso contrário!</div>
                   <div class="mb-3">
