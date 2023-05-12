@@ -7,7 +7,7 @@ main div.box {
     align-items: center;
     justify-content: center;
 }
-img {
+main img {
     width: 150px;
 }
 main .btn.dropdown-toggle {
@@ -25,4 +25,7 @@ main .btn.rounded-pill:hover{
 main select {
     color: white !important;
     background-color: #203764 !important;
+}
+header .active {
+    border-bottom: solid 3px #272727;
 }
