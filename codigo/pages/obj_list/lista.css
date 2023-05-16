@@ -1,0 +1,95 @@
+.search-bar {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    padding: 5px;
+}
+
+
+.search-input {
+    border: none;
+    background-color: transparent;
+    width: 80%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+
+.search-btn {
+    background-color: transparent;
+    border: none;
+    color: #555;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    outline: none;
+    padding: 0 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+td, th {
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+
+th {
+    background-color: #f8f8f8;
+    color: #222;
+    font-weight: 600;
+}
+
+
+tr:nth-child(odd) td {
+    background-color: #f2f2f2;
+}
+
+ 
+.navbar {
+margin-bottom: 0;
+border-radius: 0;
+}
+
+
+.row.content {height: 450px}
+
+
+.sidenav {
+padding-top: 20px;
+background-color: #f1f1f1;
+height: 100%;
+}
+
+
+footer {
+background-color: #555;
+color: white;
+padding: 15px;
+}
+
+
+@media screen and (max-width: 767px) {
+.sidenav {
+height: auto;
+padding: 15px;
+}
+.row.content {height:auto;} 
+}
