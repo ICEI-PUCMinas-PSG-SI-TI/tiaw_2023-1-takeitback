@@ -104,3 +104,7 @@ select{
 
 
 .fundo{background-color: white;}
+
+header .active {
+    border-bottom: solid 3px #272727;
+}
