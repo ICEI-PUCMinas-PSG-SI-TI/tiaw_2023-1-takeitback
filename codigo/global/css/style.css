@@ -10,6 +10,9 @@ header {
     background-color: #272727;
     font-weight: 600 !important;
 }
+header a img{
+    max-width: 140px !important;
+}
 
 /*** LINKS ***/
 @media (min-width: 992px) {
@@ -125,3 +128,21 @@ main .btn.rounded-pill:hover{
 }
     /** /Padrão de botão redondo **/
 /*** /MAIN ***/
+
+/*** OBJETOS ***/
+    /** Botão de escolha de objeto **/
+.page-link{
+    border: 2px #203764 solid;
+    font-weight: 600;
+    color: #203764; 
+}
+.page-link:hover{
+    color: white;
+    border: 2px #203764 solid;
+    background-color: #203764;
+}
+.page-link.active{
+    border: 2px #203764 solid;
+    background-color: #203764;
+}
+/*** /OBJETOS ***/

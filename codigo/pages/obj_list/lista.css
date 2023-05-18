@@ -35,7 +35,7 @@ table {
     width: 100%;
     margin: 20px 0;
     background-color: #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    box-shadow:  0 0 15px 1px rgba(0, 0, 0, 0.10);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -56,40 +56,42 @@ th {
     color: #222;
     font-weight: 600;
 }
+thead , tbody{
+   border: solid 1px #f3f3f3 !important; 
+}
 
 
 tr:nth-child(odd) td {
     background-color: #f2f2f2;
 }
-
  
-.navbar {
-margin-bottom: 0;
-border-radius: 0;
-}
-
-
 .row.content {height: 450px}
 
-
-.sidenav {
-padding-top: 20px;
-background-color: #f1f1f1;
-height: 100%;
-}
-
-
-footer {
-background-color: #555;
-color: white;
-padding: 15px;
-}
-
-
 @media screen and (max-width: 767px) {
-.sidenav {
-height: auto;
-padding: 15px;
-}
+
 .row.content {height:auto;} 
+}
+
+.lista .nav{
+    border: solid 1px #f3f3f3;
+    border-radius: 6px;
+    padding: 12px;
+    background-color: #F8F8F8;
+}
+.lista .nav-link{
+    font-weight: 600;
+    margin: 4px 0;
+    color: white;
+    border-radius: 4px;
+    background-color: #4473C5;
+}
+.lista .nav-link:hover{
+    color: white;
+    background-color: #203764;
+}
+.lista .pesquisar{
+    max-width: 420px
+}
+.lista img{
+    max-height: 220px;
 }
