@@ -7,25 +7,62 @@ main div.box {
     align-items: center;
     justify-content: center;
 }
+
 main img {
     width: 150px;
 }
+
 main .btn.dropdown-toggle {
     background-color: #203764;
     color: white;
 }
+
 main h2 {
     color: #203764
 }
-main .btn.rounded-pill:hover{
+
+main .btn.rounded-pill:hover {
     transition: all 0.6s;
     color: white;
     background-color: #335796;
 }
+
 main select {
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
     color: white !important;
     background-color: #203764 !important;
 }
+
+main .input-group input {
+    border-color: #ffffff00;
+    color: black !important;
+    background-color: white;
+}
+
+main .input-group input:hover {
+    background-color: white;
+}
+
+main .input-group input:focus {
+    background-color: white;
+}
+
+main .invalid-feedback {
+    color: #7a0000;
+    font-weight: bolder;
+}
+
 header .active {
     border-bottom: solid 3px #272727;
+}
+
+#modal-register .modal-header {
+    color: white !important;
+    background-color: #272727;
+}
+
+#modal-register #modal-aviso {
+    font-weight: 700;
+    font-size: 1.1rem;
 }
