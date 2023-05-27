@@ -1,9 +1,14 @@
 /**
- * Validar todos os campos do formulários de login a cada mudança de valor nos campos e adicionando suas classes CSS de validação
+ * Validar todos os campos do formulários de cadastro a cada mudança de valor nos campos e adicionando suas classes CSS de validação
  * @param {*} element Elemento HTML 
  * @returns true para validação corretas
  */
 function checkFields(element) {
+    /**
+     * Recebe um valor e transforma no formato padrão de telefone
+     * @param {string} value 
+     * @returns 
+     */
     function filterPhone(value) {
         if (!value) return "";
         value = value.replace(/\D/g, '');
@@ -11,6 +16,9 @@ function checkFields(element) {
         value = value.replace(/(\d)(\d{4})$/, "$1-$2");
         return value;
     }
+    /**
+     * Remove classe CSS invalida e adiciona classe CSS valida
+     */
     function classValid() {
         element.classList.remove("is-invalid");
         element.className += " is-valid";
@@ -55,6 +63,9 @@ function checkFields(element) {
         return true;
     }
 }
+/**
+ * Pega os dados dos campos de formulários de cadastro e verifica se existem dados iguais ja armazenados e por fim salvam os dados
+ */
 function storeUser() {
     const name = document.getElementById("name").value.trim();
     const matricula = document.getElementById("matricula").value;
