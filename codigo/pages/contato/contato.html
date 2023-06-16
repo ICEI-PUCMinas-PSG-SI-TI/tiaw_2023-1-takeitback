@@ -14,6 +14,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../../global/css/style.css">
     <link rel="stylesheet" href="./contato.css">
+    
+    
 
 </head>
 
@@ -101,6 +103,10 @@
                 <div class="col-12 col-lg-8 d-flex">
                     <div class="formulario mt-auto mb-auto">
                         <h5 class="text-center mt-2 mb-4">Envie-nos uma mensagem</h5>
+                        
+
+
+
                         <div class="form-floating mb-3 campos">
                             <input class="form-control" type="text" name="nome" id="nome" placeholder="nome">
                             <label for="nome">Nome</label>
@@ -110,11 +116,17 @@
                             <label for="email">E-mail</label>
                         </div>
                         <div class="form-floating mb-3 campos">
-                            <textarea class="form-control" name="mensagem" id="mensagem" placeholder="email"></textarea>
-                            <label for="email">Mensagem</label>
+                            <textarea class="form-control" name="mensagem" id="mensagem" placeholder="mensagem"></textarea>
+                            <label for="mensagem">Mensagem</label>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <button type="button" class="btn rounded-pill">Enviar</button>
+                            <button type="button" id="btnIncluirContato" class="btn rounded-pill">Enviar</button>
+
+                            <button id="btnCarregaDados"class="btn rounded-pill">Carrega Dados</button>
+                         <div id="tela"></div>
+
+                            <script src="contato.js"></script>
+                            
                         </div>
                     </div>
                 </div>
