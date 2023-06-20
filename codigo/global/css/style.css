@@ -146,3 +146,16 @@ main .btn.rounded-pill:hover{
     background-color: #203764;
 }
 /*** /OBJETOS ***/
+
+/*** MODAL GLOBAL ***/
+#modal-global .modal-header {
+    color: white !important;
+    background-color: #272727;
+}
+
+#modal-global #modal-globalAviso {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/*** /MODAL GLOBAL ***/
