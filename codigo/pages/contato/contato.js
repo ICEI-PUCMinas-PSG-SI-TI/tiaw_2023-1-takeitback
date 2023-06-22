@@ -39,7 +39,10 @@ function incluirContato (){
     salvaDados (objDados);
 
     // Atualiza os dados da tela
+    alertar ();
+    location.reload();
     imprimeDados ();
+   
 }
 
 function imprimeDados () {
@@ -57,3 +60,14 @@ function imprimeDados () {
 // Configura os botões
 document.getElementById ('btnCarregaDados').addEventListener ('click', imprimeDados);
 document.getElementById ('btnIncluirContato').addEventListener ('click', incluirContato);
+
+
+
+
+
+function alertar(){
+ 
+    
+    alert('Enviado!');
+ 
+}
