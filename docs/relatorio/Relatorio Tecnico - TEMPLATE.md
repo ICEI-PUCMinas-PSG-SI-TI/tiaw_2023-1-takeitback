@@ -1,7 +1,7 @@
 # Informações do Projeto
 `TÍTULO DO PROJETO`  
 
-Take It Back
+Take it Back!
 
 `CURSO` 
 
@@ -45,7 +45,7 @@ Nosso objetivo é criar uma ferramenta em que possa ajudar e tornar mais prátic
 
 ## Público-Alvo
 
- Público alvo de modo geral, são todas as pessoas que frequentam e trabalham na PUC-Minas São Gabriel, que por um acaso podem acabar perdendo algum objeto pessoal e que futuramente necessitaram de ajudar para reencontrar seus objetos perdidos. Especificamente, as pessoas são os alunos, professores e funcionários que estarão sempre por todo campos, seja um aluno ou professor que estará sempre participando de aulas em diferentes salas e horários ou funcionário que atuara em setor especifica da sua função.
+Público alvo de modo geral, são todas as pessoas que frequentam e trabalham na PUC-Minas São Gabriel, que por um acaso podem acabar perdendo algum objeto pessoal e que futuramente necessitaram de ajudar para reencontrar seus objetos perdidos. Especificamente, as pessoas são os alunos, professores e funcionários que estarão sempre por todo campos, seja um aluno ou professor que estará sempre participando de aulas em diferentes salas e horários ou funcionário que atuara em setor especifica da sua função.
  
 # Especificações do Projeto
 
@@ -109,5 +109,5 @@ Contém categorias e lista de objetos.
 
 # Conclusões
 
-O projeto Take It Back teve como objetivo criar uma ferramenta prática e eficiente para auxiliar na busca e recuperação de objetos perdidos na PUC-Minas São Gabriel. Foi possível alcançar a criação de um site simples, com sistema de login, cadastro de objetos perdidos e encontrados, listagem de itens, busca por objetos e promover comunicação entre os usuários.
+O projeto Take it Back! teve como objetivo criar uma ferramenta prática e eficiente para auxiliar na busca e recuperação de objetos perdidos na PUC-Minas São Gabriel. Foi possível alcançar a criação de um site simples, com sistema de login, cadastro de objetos perdidos e encontrados, listagem de itens, busca por objetos e promover comunicação entre os usuários.
 Durante o desenvolvimento, foram enfrentadas algumas dificuldades, como a garantia da privacidade das informações pessoais dos usuários e a necessidade de equilibrar a simplicidade da interface com as funcionalidades da ferramenta. No entanto, essas dificuldades foram contornadas através de uma análise cuidadosa dos requisitos. No geral, o projeto Take It Back foi capaz de proporcionar uma solução eficiente para o problema de objetos perdidos na PUC-Minas São Gabriel, oferecendo uma plataforma acessível, fácil de usar e que facilita a comunicação e a recuperação dos itens perdidos.
