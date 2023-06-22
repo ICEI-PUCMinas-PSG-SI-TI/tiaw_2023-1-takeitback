@@ -1,6 +1,7 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10666059&assignment_repo_type=AssignmentRepo)
-# Take It Back
-Nosso projeto chama-se Take it Back! Ele será responsável por tornar mais prática a procura por objetos perdidos na PUC-Minas São Gabriel. 
+# Take it Back!
+Devido a correria do dia a dia, muitas pessoas acabam esquecendo seus objetos no trabalho, faculdade, transporte público, etc. Na PUC-Minas São Gabriel, os alunos, professores e funcionários são afetados diretamente por esse problema. Objetos, muitas vezes de valor, são esquecidos por toda a área do campus, principalmente nas salas de aula. Apesar do problema, não existe um meio fácil e prático de procurar, recuperar ou anunciar o achado de itens perdidos. E é por isso que criamos o Take it Back!
+Nosso projeto será responsável por tornar mais prática a procura por objetos perdidos na PUC-Minas São Gabriel. 
 Gostariamos de criar um site que funionará como um achados e perdidos online e que, de forma simples, você possa:
 - Ter acesso aos itens perdidos na puc, cadastrados em nossa lista.
 - Requisitar um item perdido ou adicionar a lista algo que tenha achado.
