@@ -9,7 +9,7 @@ button.addEventListener("click", function(e) {
     let local = document.getElementById('objlocal').value;
     let date = document.getElementById('objdate').value;
     let description = document.getElementById('objdesc').value;
-    let type = 1;
+    let type = 2;
 
 
     let old_objects = JSON.parse(localStorage.getItem("@tib-objects"));
