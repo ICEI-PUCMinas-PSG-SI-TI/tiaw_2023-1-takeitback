@@ -37,19 +37,19 @@ Os membros do grupo são:
 
 ## Problema
 
-Devido a correria do dia a dia, muitas pessoas acabam esquecendo seus objetos no trabalho, faculdade, transporte público, etc. Na PUC-Minas São Gabriel, os alunos, professores e funcionários são afetados diretamente por esse problema. Objetos, muitas vezes de valor, são esquecidos por toda a área do campus, principalmente nas salas de aula. Apesar do problema, não existe um meio fácil e prático de procurar, recuperar ou anunciar o achado de itens perdidos.
+Devido à correria do dia a dia, muitas pessoas acabam esquecendo seus objetos no trabalho, faculdade, transporte público, etc. Na PUC-Minas São Gabriel, os alunos, professores e funcionários são afetados diretamente por esse problema. Objetos, muitas vezes de valor, são esquecidos em toda a área do campus, principalmente nas salas de aula. Apesar do problema, não existe um meio fácil e prático de procurar, recuperar ou anunciar o achado de itens perdidos.
 
 ## Objetivos
 
-Nosso objetivo é criar uma ferramenta em que possa ajudar e tornar mais prática a procura por objetos perdidos na PUC-Minas São Gabriel. Gostaríamos de criar um site de forma simples que possa disponibilizar acesso aos itens perdidos e cadastrados na puc, solicitar um item perdido ou adicionar algo que tenha achado e também facilitar a comunicação entre quem perdeu, quem achou e o achados e perdidos presencial.
+Nosso objetivo é criar uma ferramenta em que possa ajudar e tornar mais prática a procura por objetos perdidos na PUC-Minas São Gabriel. Gostaríamos de criar um site de forma simples que possa disponibilizar acesso aos itens perdidos e cadastrados na PUC, solicitar um item perdido ou adicionar algo que tenha achado e também facilitar a comunicação entre quem perdeu, quem achou e o setor de achados e perdidos presencial.
 
 ## Público-Alvo
 
- Publico alvo de modo geral são todas as pessoas que frequentam e trabalham na PUC-Minas São Gabriel, que por um acaso podem acabar perdendo algum objeto pessoal e que futuramente necessitaram de ajudar para reencontrar seus objetos perdidos. Especificamente as pessoas são os alunos, professores e funcionários que estarão sempre por todo campos, Seja um aluno ou professor que estará sempre participando de aulas em diferentes salas e horários ou funcionário que atuara em setor especifica da sua função.
+ Público alvo de modo geral, são todas as pessoas que frequentam e trabalham na PUC-Minas São Gabriel, que por um acaso podem acabar perdendo algum objeto pessoal e que futuramente necessitaram de ajudar para reencontrar seus objetos perdidos. Especificamente, as pessoas são os alunos, professores e funcionários que estarão sempre por todo campos, seja um aluno ou professor que estará sempre participando de aulas em diferentes salas e horários ou funcionário que atuara em setor especifica da sua função.
  
 # Especificações do Projeto
 
-O projeto será basicamente um site com sistema de login e cadastro de todos membros da PUC-Minas São Gabriel, que depois de autenticado poderá realizar cadastro de objetos perdidos ou encontrados e também realizar buscas em nossas listas de objetos cadastrados no sistema. Estes objetos contara com as descrição e especificações do objeto tanto como o contato para devolução e um possível local de procura.
+O projeto será basicamente um site com sistema de login e cadastro de todos membros da PUC-Minas São Gabriel, que depois de autenticado poderá realizar cadastro de objetos perdidos ou encontrados e também realizar buscas em nossas listas de objetos cadastrados no sistema. Estes objetos contaram com as descrição, especificações do objeto, bem como o contato para devolução e um possível local de busca.
 
 ## Personas
 
@@ -79,10 +79,15 @@ A tabela que segue apresenta os requisitos funcionais do projeto.
 |RF-001| Cadastro de objetos perdidos e encontrados | ALTA | 
 |RF-002| Lista de objetos perdidos e encontrados | ALTA |
 |RF-003| Marcação para retirar da lista objetos já devolvidos | MÉDIA |
+|RF-004| Sistema de login e autenticação de usuários | ALTA |
+|RF-005| Disponibilizar um canal de contato para suporte ou dúvidas | BAIXA |
+|RF-006| Adicionar informações de contato para devolução do objeto | ALTA |
+|RF-007| Incluir descrição e especificações do objeto perdido ou encontrado | MÉDIA |
+|RF-008| Criar uma página de perfil do usuário | ALTA |
 
 # Projeto da Solução
 
-O projeto é desenvolvida em linguagens Html, Css , JavaScript e também com o framework Bootstrap. Além do Font Awesome um conjunto de ferramentas de ícones e fontes.
+O projeto é desenvolvido em linguagens Html, Css , JavaScript e também com o framework Bootstrap. Além do Font Awesome um conjunto de ferramentas de ícones e fontes.
 
 ## Wireframes
 
@@ -104,10 +109,5 @@ Contém categorias e lista de objetos.
 
 # Conclusões
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Finalize escrevendo um ou dois parágrafos para relembrar o objetivo do projeto, 
-> o que foi possível alcançar e o que ficou para um trabalho futuro, e relembrando
-> as principais dificuldes encontradas e como foi possível contorná-las. 
-
-
+O projeto Take It Back teve como objetivo criar uma ferramenta prática e eficiente para auxiliar na busca e recuperação de objetos perdidos na PUC-Minas São Gabriel. Foi possível alcançar a criação de um site simples, com sistema de login, cadastro de objetos perdidos e encontrados, listagem de itens, busca por objetos e promover comunicação entre os usuários.
+Durante o desenvolvimento, foram enfrentadas algumas dificuldades, como a garantia da privacidade das informações pessoais dos usuários e a necessidade de equilibrar a simplicidade da interface com as funcionalidades da ferramenta. No entanto, essas dificuldades foram contornadas através de uma análise cuidadosa dos requisitos. No geral, o projeto Take It Back foi capaz de proporcionar uma solução eficiente para o problema de objetos perdidos na PUC-Minas São Gabriel, oferecendo uma plataforma acessível, fácil de usar e que facilita a comunicação e a recuperação dos itens perdidos.

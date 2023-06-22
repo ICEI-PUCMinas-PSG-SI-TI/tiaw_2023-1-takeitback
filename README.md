@@ -22,4 +22,6 @@ Gostariamos de criar um site que funionará como um achados e perdidos online e 
 [Kanban GitHub](https://github.com/orgs/ICEI-PUCMinas-PSG-SI-TI/projects/9)
 
 ## Instruções para uso
-Coloque aqui as instruções para acessar a página inicial do projeto (caminho completo do arquivo).
+Acesse pagina inicial do projeto: 
+
+`codigo/pages/home/home.html`
