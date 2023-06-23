@@ -33,4 +33,5 @@ button.addEventListener("click", function(e) {
     
     localStorage.setItem("@tib-objects", JSON.stringify(list_obj));
     alert("Objeto cadastrado com sucesso!")
+    location.href = "../obj_register/obj_register2.html"
 })
