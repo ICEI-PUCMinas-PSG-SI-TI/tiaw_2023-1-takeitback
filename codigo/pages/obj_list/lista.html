@@ -61,25 +61,26 @@
             <nav class="mt-5" aria-label="Alternar objetos">
                 <ul class="pagination justify-content-left">
                     <li class="page-item">
-                        <a class="page-link active" href="#">Objetos perdidos</a>
+                        <button class="page-link active" onclick="changeType(1, this)">Objetos perdidos</button>
                     </li>
                     <li class="page-item">
-                        <a class="page-link" href="#">Objetos encontrados</a>
+                        <button class="page-link" onclick="changeType(2, this)">Objetos encontrados</button>
                     </li>
                 </ul>
             </nav>
         </div>
-        <h2 class="d-flex flex-wrap justify-content-center">Objetos Perdidos</h2>
-        <div class="container-fluid text-center">
+        <h2 class="d-flex flex-wrap justify-content-center" id="title">Objetos Perdidos</h2>
+        <div class="container-fluid text-center row area-table">
             <div class="row content">
                 <div class="col-md-4 col-lg-2 sidenav">
                     <h5>Categorias</h5>
                     <nav class="nav flex-column">
-                        <a class="nav-link" href="#">Acessório</a>
-                        <a class="nav-link" href="#">Ferramenta</a>
-                        <a class="nav-link" href="#">Material Escolar</a>
-                        <a class="nav-link" href="#">Vestuário</a>
-                        <a class="nav-link" href="#">Outros</a>
+                        <button class="nav-link btn-filter" onclick="filterObj(1)">Acessório</button>
+                        <button class="nav-link btn-filter" onclick="filterObj(2)">Documento</button>
+                        <button class="nav-link btn-filter" onclick="filterObj(3)">Ferramenta</button>
+                        <button class="nav-link btn-filter" onclick="filterObj(4)">Material Escolar</button>
+                        <button class="nav-link btn-filter" onclick="filterObj(5)">Vestuário</button>
+                        <button class="nav-link btn-filter" onclick="filterObj(6)">Outros</button>
                     </nav>
                 </div>
                 <div class="col-md-8 col-lg-10">
@@ -87,35 +88,50 @@
                         <div class="d-flex justify-content-end">
                             <div class="input-group mb-2 mt-2 pesquisar">
                                 <input type="text" class="form-control" placeholder="Pesquisar..."
-                                    aria-label="Pesquisar..." aria-describedby="button-addon2">
-                                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
-                                        class="fa-solid fa-magnifying-glass"></i></button>
+                                    aria-label="Pesquisar..." aria-describedby="button-addon2" id="inputSearch">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                                    onclick="searchObj()"><i class="fa-solid fa-magnifying-glass"></i></button>
                             </div>
                         </div>
+                        <h5>Meus</h5>
                         <table class="table">
                             <thead>
                                 <tr>
                                     <th>Nome</th>
                                     <th>Local</th>
                                     <th>Data</th>
-                                    <th>Descrição</th>
+                                    <th>Categoria</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabela_obj_meus">
+
+                            </tbody>
+                        </table>
+                        <h5>Todos</h5>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Local</th>
+                                    <th>Data</th>
+                                    <th>Categoria</th>
                                 </tr>
                             </thead>
                             <tbody id="tabela_obj">
-                                
+
                             </tbody>
                         </table>
                     </div>
                 </div>
-
             </div>
-            <div>
-                <h2>Não achou seu objeto ?</h2>
-                <img class="img-fluid" src="../../assets/genko-confusa.jpg" alt="">
-                <div class="d-flex flex-wrap justify-content-center">
-                    <a class="btn rounded-pill" href="../obj_register/obj_register.html">Cadastre seu objeto</a>
-                </div>
+        </div>
+        <div class="text-center">
+            <h2>Não achou seu objeto ?</h2>
+            <img class="img-fluid" src="../../assets/genko-confusa.jpg" alt="">
+            <div class="d-flex flex-wrap justify-content-center">
+                <a class="btn rounded-pill" href="../obj_register/obj_register.html">Cadastre seu objeto</a>
             </div>
+        </div>
     </main>
 
     <footer class="shadow">
