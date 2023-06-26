@@ -1,3 +1,9 @@
+function openModal(title, desc) {
+    document.getElementById("modal-globalLabel").innerHTML = title;
+    document.getElementById("modal-globalAviso").innerHTML = desc;
+    $("#modal-global").modal("show");
+}
+
 function saveObj() {
     let list_obj = [];
     let old_objects = JSON.parse(localStorage.getItem("@tib-objects"));
@@ -22,7 +28,7 @@ function saveObj() {
     list_obj.push(obj);
 
     localStorage.setItem("@tib-objects", JSON.stringify(list_obj));
-    alert("Objeto cadastrado com sucesso!")
+    openModal("Objeto Cadastrado", "Os dados foram salvos com sucesso.");
     form.reset();
 }
 function changeType(value, btn) {
