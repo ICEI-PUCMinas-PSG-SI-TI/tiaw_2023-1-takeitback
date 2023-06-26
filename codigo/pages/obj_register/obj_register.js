@@ -7,24 +7,40 @@ function openModal(title, desc) {
 function saveObj() {
     let list_obj = [];
     let old_objects = JSON.parse(localStorage.getItem("@tib-objects"));
+    const id = Math.floor(Date.now() * Math.random());
+
+
+    const fileImg = document.getElementById("file");
+    if (fileImg) {
+        if (fileImg.files.item(0).size <= 1000000) {
+            let reader = new FileReader();
+            reader.onload = (e) => {
+                let listImg = (JSON.parse(localStorage.getItem("@tib-img")) || []);
+                listImg.push({
+                    id: id,
+                    img: e.target.result
+                })
+                localStorage.setItem("@tib-img", JSON.stringify(listImg))
+            }
+            reader.readAsDataURL(fileImg.files[0]);
+        }
+    }
 
     if (old_objects) {
         old_objects.forEach((object) => {
             list_obj.push(object)
         });
     }
-
     let obj = {
         nome: document.getElementById('objname').value,
         local: document.getElementById('objlocal').value,
         data: document.getElementById('objdate').value,
         descricao: document.getElementById('objdesc').value,
         categoria: parseInt(document.getElementById('objcategory').value),
-        id: list_obj.length + 1,
+        id: id,
         tipo: type,
-        usuario: JSON.parse(localStorage.getItem("userLogged"))
+        usuario: JSON.parse(localStorage.getItem("userLogged")),
     }
-
     list_obj.push(obj);
 
     localStorage.setItem("@tib-objects", JSON.stringify(list_obj));
