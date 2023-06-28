@@ -55,9 +55,11 @@ function loadInfos() {
                 password: user.password,
                 nascimento: user.nascimento,
                 genero: user.genero,
+                cep: user.cep,
                 estado: user.estado,
                 cidade: user.cidade,
                 bairro: user.bairro,
+                rua: user.rua,
                 imgData: user.imgData
             }
         }
@@ -73,9 +75,11 @@ function loadInfos() {
 
     inputNascimento.value = userSelected.nascimento || "";
     inputGenero.value = userSelected.genero || "";
+    inputCep.value = userSelected.cep || "";
     inputEstado.value = userSelected.estado || "";
     inputCidade.value = userSelected.cidade || "";
     inputBairro.value = userSelected.bairro || "";
+    inputRua.value = userSelected.rua || "";
 
 }
 /**
@@ -104,6 +108,12 @@ function checkFields() {
         openModal("Erro na Alteração", "Telefone Inválido");
         return false;
     }
+    if (inputCep.value.length) {
+        if (inputCep.value.length !== 8) {
+            openModal("Erro na Alteração", "Digite um CEP valido.");
+            return false;
+        }
+    }
     if (inputEstado.value.length || inputCidade.value.length) {
         if (!inputEstado.value.length) {
             openModal("Erro na Alteração", "Selecione um Estado");
@@ -117,6 +127,12 @@ function checkFields() {
     if (inputBairro.value.length) {
         if (inputBairro.value.length < 2) {
             openModal("Erro na Alteração", "Digite um bairro com no mínimo 2 caracteres");
+            return false;
+        }
+    }
+    if (inputRua.value.length) {
+        if (inputRua.value.length < 1) {
+            openModal("Erro na Alteração", "Digite uma Rua com no mínimo 1 caracteres");
             return false;
         }
     }
@@ -137,9 +153,11 @@ function saveChanges() {
             email: inputEmail.value,
             nascimento: inputNascimento.value,
             genero: inputGenero.value,
+            cep: inputCep.value,
             estado: inputEstado.value,
             cidade: inputCidade.value,
             bairro: inputBairro.value,
+            rua: inputRua.value,
             imgData: imageResult.getAttribute("src")
         }
         listUsers.forEach((user, i, array) => {
@@ -152,6 +170,18 @@ function saveChanges() {
         localStorage.setItem("@tib-users", JSON.stringify(listUsers));
         openModal("Sucesso na Alteração", "Suas mudanças foram salvas.");
     }
+}
+
+function getAddress(cep){
+    const apiURL = `https://viacep.com.br/ws/${cep}/json/`
+    fetch(apiURL).then(response => {
+        response.json().then((data)=>{
+            inputEstado.value = data.uf;
+            inputCidade.value = data.localidade;
+            inputBairro.value =  data.bairro;
+            inputRua.value =  data.logradouro; 
+        })
+    }) 
 }
 
 //Exportando LocalStorage
@@ -186,10 +216,18 @@ let inputGenero = document.getElementById("inputGenero");
 let inputEstado = document.getElementById("inputEstado");
 let inputCidade = document.getElementById("inputCidade");
 let inputBairro = document.getElementById("inputBairro");
+let inputCep = document.getElementById("inputCep");
+let inputRua = document.getElementById("inputRua");
 
 //Carregando Informações
 loadInfos();
 
+//Carregando Endereço
+inputCep.addEventListener("keyup", event =>{
+    if(inputCep.value.length === 8){
+        getAddress(inputCep.value);
+    }
+})
 
 //Salvando Informações no LocalStorage
 let btnSalvar = document.getElementById("btn-salvar");

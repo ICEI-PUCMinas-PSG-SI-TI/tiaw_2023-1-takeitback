@@ -122,7 +122,8 @@
                 <div class="row g-3">
                     <div class="col-md-2">
                         <label class="form-label">Matrícula</label>
-                        <input id="inputMatricula" type="text" class="form-control bg-secondary-subtle" placeholder="Matricula" readonly>
+                        <input id="inputMatricula" type="text" class="form-control bg-secondary-subtle"
+                            placeholder="Matricula" readonly>
                     </div>
                     <div class="col-md-2">
                         <label class="form-label">Tipo</label>
@@ -135,8 +136,8 @@
                     </div>
                     <div class="col-md-5 col-lg-4">
                         <label class="form-label">E-mail</label>
-                        <input id="inputEmail" type="email" class="form-control bg-secondary-subtle" placeholder="email@sga.pucminas.br"
-                            readonly>
+                        <input id="inputEmail" type="email" class="form-control bg-secondary-subtle"
+                            placeholder="email@sga.pucminas.br" readonly>
                     </div>
                     <div class="col-md-3">
                         <label class="form-label">Telefone</label>
@@ -151,7 +152,11 @@
             <div class="cartao">
                 <h3> <i class="fa-solid fa-location-dot"></i> Localidade </h3>
                 <div class="row g-3">
-                    <div class="col-md-3 col-lg-2">
+                    <div class="col-md-3">
+                        <label class="form-label">CEP</label>
+                        <input id="inputCep" type="text" class="form-control" placeholder="CEP">
+                    </div>
+                    <div class="col-md-3">
                         <label class="form-label">Estado</label>
                         <select id="inputEstado" class="form-select">
                             <option value="" selected>Escolha...</option>
@@ -185,13 +190,19 @@
                             <option value="EX">Estrangeiro</option>
                         </select>
                     </div>
-                    <div class="col-md-5 col-lg-4">
+                    <div class="col-md-3">
                         <label class="form-label">Cidade</label>
                         <input id="inputCidade" type="text" class="form-control" placeholder="Cidade">
                     </div>
-                    <div class="col-md-4 col-lg-3">
+                    <div class="col-md-3">
                         <label class="form-label">Bairro</label>
                         <input id="inputBairro" type="text" class="form-control" placeholder="Bairro">
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-5">
+                        <label class="form-label">Rua</label>
+                        <input id="inputRua" type="text" class="form-control" placeholder="Rua">
                     </div>
                 </div>
             </div>
