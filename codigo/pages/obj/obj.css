@@ -1,0 +1,149 @@
+/** Geral **/
+#area-obj,
+#area-desc,
+#area-autor {
+    margin: 6px;
+}
+
+/** /Geral **/
+
+/** Botão voltar **/
+#prev {
+    max-width: max-content;
+    text-decoration: none;
+    color: #4473C5;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#prev:hover {
+    text-decoration: none;
+    color: #203764;
+    font-size: 18px;
+}
+
+/** /Botão voltar **/
+
+/** Area Objeto **/
+#area-obj img {
+    width: 350px !important;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.10);
+}
+
+#area-obj i {
+    margin-right: 8px;
+    font-size: 18px;
+    color: #7F7F7F;
+}
+
+#area-obj span {
+    font-weight: 600;
+}
+
+/** /Area Objeto **/
+
+/** Area Descrição **/
+#area-desc {
+    padding: 20px;
+    border: solid #DEE2E6 1px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.10);
+}
+
+#area-desc i {
+    margin-right: 8px;
+    font-size: 18px;
+    color: #7F7F7F;
+}
+
+#area-desc h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #4473C5;
+}
+
+#area-desc span {
+    font-weight: 600;
+}
+
+#date-obj {
+    font-style: italic;
+}
+
+#area-desc p {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+/** /Area Descrição **/
+
+/** Responsável **/
+#area-autor {
+    height: max-content;
+    width: 100%;
+    max-width: 420px;
+    border: solid #4473C5 1px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.10);
+}
+
+#area-autor h3 {
+    padding: 8px;
+    text-align: center;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    color: white;
+    background-color: #4473C5;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+#area-autor i {
+    color: #4473C5;
+    font-size: 60px;
+}
+
+#img-user {
+    border: solid #4473C5 2px;
+    width: 60px;
+    border-radius: 30px;
+}
+
+#area-autor #nome-user {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#area-autor #btn-user {
+    font-weight: bolder;
+    background-color: #4473C5;
+    color: white;
+}
+
+#area-autor #btn-user:hover {
+    background-color: #203764;
+}
+
+/** /Responsável **/
+
+/** Botão Excluir Objeto **/
+.danger {
+    background-color: #DC3545 !important;
+}
+
+.danger:hover {
+    background-color: #a5222f !important;
+}
+
+/** MODAL **/
+.modal-body i {
+    font-size: 18px;
+    margin-right: 4px;
+}
+
+.modal-body span {
+    word-wrap: break-word;
+}
+
+/** /MODAL **/
