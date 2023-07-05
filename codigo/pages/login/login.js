@@ -1,7 +1,7 @@
 if (localStorage.getItem('token') != null) {
-    document.getElementsByTagName("main")[0].classList.add("d-none");
-    document.getElementsByTagName("footer")[0].classList.add("d-none");
     location.href = "../usuario/usuario.html"
+}else{
+    document.getElementById("area-login").classList.remove("d-none")
 }
 
 function openModal(title, desc) {
