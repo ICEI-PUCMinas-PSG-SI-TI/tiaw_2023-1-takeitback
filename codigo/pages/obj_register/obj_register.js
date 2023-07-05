@@ -11,7 +11,7 @@ function saveObj() {
 
 
     const fileImg = document.getElementById("file");
-    if (fileImg) {
+    if (fileImg.length) {
         if (fileImg.files.item(0).size <= 1000000) {
             let reader = new FileReader();
             reader.onload = (e) => {
