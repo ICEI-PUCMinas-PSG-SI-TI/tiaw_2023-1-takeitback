@@ -1,42 +1,12 @@
-.search-bar {
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    padding: 5px;
-}
 
-
-.search-input {
-    border: none;
-    background-color: transparent;
-    width: 80%;
-    font-size: 14px;
-    font-weight: 400;
-    color: #555;
-    outline: none;
-    padding-left: 10px;
-    padding-right: 5px;
-}
-
-
-.search-btn {
-    background-color: transparent;
-    border: none;
-    color: #555;
-    font-size: 14px;
-    font-weight: 400;
-    cursor: pointer;
-    outline: none;
-    padding: 0 10px;
-}
 
 table {
     width: 100%;
-    margin: 20px 0;
     background-color: #fff;
-    box-shadow:  0 0 15px 1px rgba(0, 0, 0, 0.10);
-    border-radius: 10px;
+    box-shadow:  0 0 15px 3px rgba(0, 0, 0, 0.10);
+    border-radius: 15px;
     height: 100%;
+    overflow: hidden;
 }
 
 
@@ -50,11 +20,29 @@ td, th {
 }
 tbody tr{
     cursor: pointer;
+    text-transform: capitalize;
+}
+tbody td{
+    font-weight: 600;
+}
+
+tbody tr:hover>td{
+    font-weight: bold;
+    background-color: #203764;
+    color: white;
+    transition: 0.5s;
+}
+
+tbody tr>td{
+    transition: 0.3s;
+}
+
+thead tr{
+    background-color: #4473C5;
 }
 
 th {
-    background-color: #f8f8f8;
-    color: #222;
+    color: #ffffff;
     font-weight: 600;
 }
 thead , tbody{
@@ -70,12 +58,25 @@ tr:nth-child(odd) td {
 
 .row.content {height:auto;} 
 }
+.lista .form-select {
+    border:  solid #4473C5 1px;
+    color: #4473C5;
+    font-weight: 600;
+}
+.lista .form-select option {
+    background-color: #4473c500;
+}
+
+.separador{
+    margin: 20px 0;
+    border-bottom: solid 1px #4473C5;
+}
+
 
 .lista .nav{
-    border: solid 1px #f3f3f3;
+    border: solid 1px #4473C5;
     border-radius: 6px;
     padding: 12px;
-    background-color: #F8F8F8;
 }
 .lista .nav-link{
     font-weight: 600;
@@ -98,3 +99,20 @@ tr:nth-child(odd) td {
 .lista img{
     max-height: 220px;
 }
+@media (max-width: 576px) {
+    .ocultar-responsivo{
+        display: none !important;
+    }
+}
+
+.title-filter{
+    color: #4473C5;
+    padding: 2px;
+    font-size: 18px;
+}
+.title-filter i{
+    color: #4473C5;
+    margin-right: 5px;
+}
+
+

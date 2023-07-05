@@ -25,7 +25,8 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="d-lg-none" href="#"><i id="icon-user" class="fa-solid fa-circle-user"></i></a>
+                <a class="d-lg-none" href="../login/login.html"><i id="icon-user"
+                        class="fa-solid fa-circle-user"></i></a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav  ms-auto">
                         <li class="nav-item">
@@ -57,7 +58,7 @@
     </header>
 
     <main class="container lista">
-        <div class="row">
+        <div>
             <nav class="mt-5" aria-label="Alternar objetos">
                 <ul class="pagination justify-content-left">
                     <li class="page-item">
@@ -70,21 +71,38 @@
             </nav>
         </div>
         <h2 class="d-flex flex-wrap justify-content-center" id="title">Objetos Perdidos</h2>
-        <div class="container-fluid text-center row area-table">
-            <div class="row content">
+        <div class="container-fluid area-table">
+            <div class="row">
                 <div class="col-md-4 col-lg-2 sidenav">
-                    <h5>Categorias</h5>
+                    <div class="title-filter">
+                        <i class="fa-solid fa-sliders"></i><b>Filtros</b>
+                    </div>
                     <nav class="nav flex-column">
-                        <button class="nav-link btn-filter" onclick="filterObj(1)">Acessório</button>
-                        <button class="nav-link btn-filter" onclick="filterObj(2)">Documento</button>
-                        <button class="nav-link btn-filter" onclick="filterObj(3)">Ferramenta</button>
-                        <button class="nav-link btn-filter" onclick="filterObj(4)">Material Escolar</button>
-                        <button class="nav-link btn-filter" onclick="filterObj(5)">Vestuário</button>
-                        <button class="nav-link btn-filter" onclick="filterObj(6)">Outros</button>
+                        <div class="title-filter">
+                            <i class="fa-solid fa-arrow-up-short-wide"></i><b>Ordem:</b>
+                        </div>
+                        <select id="input-ordem" class="form-select form-select-sm">
+                            <option value="1" selected>Recentes</option>
+                            <option value="2">Antigos</option>
+                        </select>
+                        <div class="separador"></div>
+                        <div class="title-filter">
+                            <i class="fa-solid fa-layer-group"></i></i><b>Categoria:</b>
+                        </div>
+                        <select id="input-categoria" class="form-select form-select-color form-select-sm">
+                            <option value="" selected></option>
+                            <option value="1">Acessório</option>
+                            <option value="2">Documento</option>
+                            <option value="3">Eletrônico</option>
+                            <option value="4">Ferramenta</option>
+                            <option value="5">Material Escolar</option>
+                            <option value="6">Vestuário</option>
+                            <option value="7">Outros</option>
+                        </select>
                     </nav>
                 </div>
                 <div class="col-md-8 col-lg-10">
-                    <div>
+                    <div class="text-center">
                         <div class="d-flex justify-content-end">
                             <div class="input-group mb-2 mt-2 pesquisar">
                                 <input type="text" class="form-control" placeholder="Pesquisar..."
@@ -98,7 +116,7 @@
                             <thead>
                                 <tr>
                                     <th>Nome</th>
-                                    <th>Local</th>
+                                    <th class="ocultar-responsivo">Local</th>
                                     <th>Data</th>
                                     <th>Categoria</th>
                                 </tr>
@@ -112,7 +130,7 @@
                             <thead>
                                 <tr>
                                     <th>Nome</th>
-                                    <th>Local</th>
+                                    <th class="ocultar-responsivo">Local</th>
                                     <th>Data</th>
                                     <th>Categoria</th>
                                 </tr>
