@@ -11,8 +11,8 @@ function saveObj() {
 
 
     const fileImg = document.getElementById("file");
-    if (fileImg.length) {
-        if (fileImg.files.item(0).size <= 1000000) {
+    if (fileImg.files.length) {
+        if (fileImg.files.item(0).size <= 102400) {
             let reader = new FileReader();
             reader.onload = (e) => {
                 let listImg = (JSON.parse(localStorage.getItem("@tib-img")) || []);
