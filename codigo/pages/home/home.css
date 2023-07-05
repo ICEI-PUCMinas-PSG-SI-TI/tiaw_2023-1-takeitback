@@ -1,8 +1,30 @@
 /*** HOME GERAL **/
+body{
+    overflow-x: hidden;
+}
 .home section{
     margin-bottom: 26px;
 }
 /*** INTRODUÇÃO **/
+.banner {
+    background: #272727 url(../../assets/background.jpg) repeat;
+    background-size: contain; 
+}
+.banner section{
+    color: white;
+    padding: 10px 0;
+    background-color: rgba(39, 39, 39, 0.974);   
+}
+.intro-home{
+    opacity: 1;
+    z-index: 1;
+    height: 380px;
+    margin: 10px;
+}
+.intro-home h2{
+    color: #4473C5;
+    font-weight: bolder;
+}
 .intro-home p{
     font-size: 1.1rem;
 }
@@ -16,7 +38,6 @@
     text-decoration: underline;
 }
 .background img{
-    margin-right: -32px;
     max-height: 380px;
 }
 /*** SECTION 2 **/
