@@ -98,7 +98,7 @@ function changeType(value, btn) {
     }
     btn.classList.add("active");
 
-    let word = value === 1 ? "Perdidos" : "Encontrados";
+    let word = value === 1 ? "Perdidos" : "Achados";
     document.getElementById("title").innerHTML = "Objetos " + word;
 
     let list = JSON.parse(localStorage.getItem('@tib-objects'));

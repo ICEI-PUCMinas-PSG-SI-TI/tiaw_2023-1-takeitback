@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    if (localStorage.getItem('token') == null) {
+    if (localStorage.getItem('userLogged') == null) {
       openModal('Atenção', 'Você precisa estar logado para acessar essa página');
       let btnOk = document.getElementById("btn-ok");
       btnOk.addEventListener("click", e => location.href = "../login/login.html");
