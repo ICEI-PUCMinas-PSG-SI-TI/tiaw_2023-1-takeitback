@@ -1,4 +1,4 @@
-if (localStorage.getItem('token') != null) {
+if (localStorage.getItem('userLogged') != null) {
     location.href = "../usuario/usuario.html"
 }else{
     document.getElementById("area-login").classList.remove("d-none")
