@@ -172,16 +172,19 @@ function saveChanges() {
     }
 }
 
-function getAddress(cep){
-    const apiURL = `https://viacep.com.br/ws/${cep}/json/`
+
+function getAddress(cep) {
+    const apiURL = `https://viacep.com.br/ws/${cep}/json/`;
     fetch(apiURL).then(response => {
-        response.json().then((data)=>{
-            inputEstado.value = data.uf;
-            inputCidade.value = data.localidade;
-            inputBairro.value =  data.bairro;
-            inputRua.value =  data.logradouro; 
+        response.json().then((data) => {
+            if (!data.erro) {
+                inputEstado.value = data.uf;
+                inputCidade.value = data.localidade;
+                inputBairro.value = data.bairro;
+                inputRua.value = data.logradouro;
+            }
         })
-    }) 
+    })
 }
 
 //Exportando LocalStorage
@@ -223,9 +226,14 @@ let inputRua = document.getElementById("inputRua");
 loadInfos();
 
 //Carregando Endereço
-inputCep.addEventListener("keyup", event =>{
-    if(inputCep.value.length === 8){
+inputCep.addEventListener("keyup", event => {
+    if (inputCep.value.length === 8) {
         getAddress(inputCep.value);
+    } else {
+        inputEstado.value = "";
+        inputCidade.value = "";
+        inputBairro.value = "";
+        inputRua.value = "";
     }
 })
 
