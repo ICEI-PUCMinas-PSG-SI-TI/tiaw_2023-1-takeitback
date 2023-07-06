@@ -154,7 +154,7 @@
                 <div class="row g-3">
                     <div class="col-md-3">
                         <label class="form-label">CEP</label>
-                        <input id="inputCep" type="text" class="form-control" placeholder="CEP">
+                        <input id="inputCep" type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '')" class="form-control" placeholder="CEP">
                     </div>
                     <div class="col-md-3">
                         <label class="form-label">Estado</label>
