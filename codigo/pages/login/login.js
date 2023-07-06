@@ -46,8 +46,6 @@ function logar() {
         if (login == userValid.email && senha == userValid.password) {
             location.href = "../usuario/usuario.html";
 
-            let token = Math.random().toString(16).substring(2)
-            localStorage.setItem('token', token)
             localStorage.setItem('userLogged', userValid.id);
         } else {
             openModal("Erro no Login", "Email ou senha incorretos!");

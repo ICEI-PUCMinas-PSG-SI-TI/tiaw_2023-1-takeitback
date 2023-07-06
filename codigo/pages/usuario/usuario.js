@@ -1,5 +1,4 @@
 function sair() {
-    localStorage.removeItem('token');
     localStorage.removeItem('userLogged');
     location.href = "../login/login.html";
 }
